@@ -9,5 +9,7 @@ factorial(X,F) :-
 % Predicado muestra_factorial(X) que escribe el factorial del 
 % número X.
 muesta_factorial(X) :-
+   write("El factorial de "), write(X), write(" es"),
+   nl,
    factorial(X,F),
-   write(F).
+   tab(3), write(F).
