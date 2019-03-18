@@ -8,8 +8,9 @@ factorial(X,F) :-
 
 % Predicado muestra_factorial(X) que escribe el factorial del 
 % número X.
-muesta_factorial(X) :-
-   write("El factorial de "), write(X), write(" es"),
-   nl,
+muestra_factorial :-
+   write("Introduce el factorial que deseas buscar: "), nl,
+   read(X), nl,
+   write("El factorial de "), write(X), write(" es: "),
    factorial(X,F),
-   tab(3), write(F).
+   write(F).
