@@ -6,10 +6,10 @@ estado(3).
 inicial(1).
 final(3).
 
-transicion(1,2,b).
-transicion(2,2,b).
-transicion(2,3,a).
-transicion(3,2,b).
+transicion(1,b,2).
+transicion(2,b,2).
+transicion(2,a,3).
+transicion(3,b,2).
 
 % Predicado acepta(L) que indica si una cadena es aceptada por el 
 % autómata definido.
@@ -21,5 +21,5 @@ acepta(L) :-
 % dado un estado.
 aceptaAux([],Q) :- final(Q).
 aceptaAux([C|R],Q) :-
-   transicion(Q,Y,C),
+   transicion(Q,C,Y),
    aceptaAux(R,Y).
