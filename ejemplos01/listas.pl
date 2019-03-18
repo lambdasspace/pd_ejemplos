@@ -11,3 +11,7 @@ concatena([C1|R1],L2,[C1|R3]) :- concatena(R1,L2,R3).
 % Predicado concatenaDif1(X,Y,Z) que representa a Z como la 
 % concatenación de las listas X y Y.
 concatenaDif1(A-Ha,B-Hb,C-Hc) :- Ha = B, Hb = Hc, C = A.
+
+% Predicado concatenaDif2(X,Y,Z) que representa a Z como la 
+% concatenación de las listas X y Y.
+concatenaDif2(A-B,B-C,A-C).
