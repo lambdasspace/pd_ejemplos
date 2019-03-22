@@ -14,4 +14,9 @@ module Ejemplo where
    -- y diámetro.
    areaTotal2 :: Float -> Float -> Float
    areaTotal2 h d = let r = (d/2) in 2 * pi * r * (h + r)
-   
+
+   -- Función que calcula el área total de un cilíndro dada su altura 
+   -- y diámetro.
+   areaTotal3 :: Float -> Float -> Float
+   areaTotal3 h d = 2 * pi * r * (h + r)
+      where r = (d/2)
