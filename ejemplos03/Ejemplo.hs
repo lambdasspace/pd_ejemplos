@@ -56,4 +56,10 @@ module Ejemplo where
 
    -- Función que obtiene los factores de un número entero. 
    factores :: Int -> [Int]
-   factores n = [x | x <- [1..n], mod n x == 0]             
+   factores n = [x | x <- [1..n], mod n x == 0]
+
+   -- Función que calcula el fibonacci de un número.
+   fibonacci :: Int -> Int
+   fibonacci n
+      | n < 2 = 1
+      | otherwise = fibonacci (n - 1) + fibonacci (n - 2)             
