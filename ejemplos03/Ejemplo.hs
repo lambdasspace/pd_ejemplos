@@ -102,3 +102,15 @@ module Ejemplo where
    filter' :: (a -> bool) -> [a] -> [a]
    filter' _ [] = []
    filter' f (x:xs) if f x then x:(filter' f xs) else filter' f xs     
+
+   -- Función que aplica una función de forma encadenada a la derecha
+   -- a los elementos de una lista dado un caso base.
+   foldr' :: (a -> b -> b) -> b -> [a] -> b
+   foldr' _ v [] = v
+   foldr' f v (x:xs) = f x (foldr' f v xs)
+
+   -- Función que aplica una función de forma encadenada a la 
+   -- izquierda a los elementos de una lista dado un caso base.
+   foldl' :: (a -> b -> a) -> a -> [b] -> a
+   foldl' _ v [] = v
+   foldl' f v (x:xs) = foldl' f (f v x) xs
