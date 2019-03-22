@@ -62,4 +62,10 @@ module Ejemplo where
    fibonacci :: Int -> Int
    fibonacci n
       | n < 2 = 1
-      | otherwise = fibonacci (n - 1) + fibonacci (n - 2)             
+      | otherwise = fibonacci (n - 1) + fibonacci (n - 2)
+
+   -- Función que calcula el fibonacci de un número.
+   fibonacci2 :: Int -> Int
+   fibonacci2 0 = 1
+   fibonacci2 1 = 1
+   fibonacci2 n = fibonacci2 (n - 1) + fibonacci2 (n - 2)                   
