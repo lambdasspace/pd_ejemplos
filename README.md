@@ -17,4 +17,5 @@ $ git clone https://github.com/declarativafc/ejemplos
 ## Contenido
 
 1. [Introducción a Prolog](https://github.com/declarativafc/ejemplos/tree/master/ejemplos01)
-1. [Control de programas en Prolog](https://github.com/declarativafc/ejemplos/tree/master/ejemplos02)
+2. [Control de programas en Prolog](https://github.com/declarativafc/ejemplos/tree/master/ejemplos02)
+3. [Introducción a Haskell](https://github.com/declarativafc/ejemplos/tree/master/ejemplos03)
