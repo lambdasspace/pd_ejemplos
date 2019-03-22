@@ -95,4 +95,10 @@ module Ejemplo where
    -- cada elemento de la lista.
    map' :: (a -> b) -> [a] -> [b]
    map' _ [] = []
-   map' f (x:xs) = (f x):map' f xs     
+   map' f (x:xs) = (f x):map' f xs
+
+   -- Función que dado un predicado y una lista, regresa una lista con 
+   -- los elementos que cumplen con el predicado.
+   filter' :: (a -> bool) -> [a] -> [a]
+   filter' _ [] = []
+   filter' f (x:xs) if f x then x:(filter' f xs) else filter' f xs     
