@@ -52,4 +52,8 @@ module Ejemplo where
    ecCuad :: Float -> Float -> Float -> (Float,Float)     
    ecCuad a b c =          
       (((b*(-1)) + (sqrt (b**2-4*a*c)))  / (2*a),          
-       ((b*(-1)) - (sqrt (b**2-4*a*c)))  / (2*a))      
+       ((b*(-1)) - (sqrt (b**2-4*a*c)))  / (2*a))
+
+   -- Función que obtiene los factores de un número entero. 
+   factores :: Int -> [Int]
+   factores n = [x | x <- [1..n], mod n x == 0]             
