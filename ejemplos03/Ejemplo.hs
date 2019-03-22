@@ -80,3 +80,13 @@ module Ejemplo where
    busca _ [] = error "Variable libre"
    busca i ((sub_id,value):xs) =
      if i == sub_id then value else busca i xs
+
+   -- Suma los elementos de una lista de números enteros
+   sumaLst :: [Int] -> Int
+   sumaLst [] = 0
+   sumaLst (x:xs) = x + (sumaLst xs)
+
+   -- Multiplica los elementos de una lista de números enteros
+   multLst :: [Int] -> Int
+   multLst [] = 1 
+   multLst (x:xs) = x * (multLst xs)     
