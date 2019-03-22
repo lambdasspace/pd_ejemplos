@@ -68,4 +68,9 @@ module Ejemplo where
    fibonacci2 :: Int -> Int
    fibonacci2 0 = 1
    fibonacci2 1 = 1
-   fibonacci2 n = fibonacci2 (n - 1) + fibonacci2 (n - 2)                   
+   fibonacci2 n = fibonacci2 (n - 1) + fibonacci2 (n - 2)
+
+   -- Suma los primeros n números naturales
+   suma :: Int -> Int
+   suma 0 = 0
+   suma n = n + suma (n - 1)
