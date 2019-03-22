@@ -20,3 +20,7 @@ module Ejemplo where
    areaTotal3 :: Float -> Float -> Float
    areaTotal3 h d = 2 * pi * r * (h + r)
       where r = (d/2)
+
+   -- Función que calcula el valor absoluto de un número.
+   absoluto :: Int -> Int
+   absoluto x = if x >= 0 then x else x * (-1)      
