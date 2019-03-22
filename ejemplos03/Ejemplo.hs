@@ -89,4 +89,10 @@ module Ejemplo where
    -- Multiplica los elementos de una lista de números enteros
    multLst :: [Int] -> Int
    multLst [] = 1 
-   multLst (x:xs) = x * (multLst xs)     
+   multLst (x:xs) = x * (multLst xs)
+
+   -- Función que dada una función y una lista, aplica la función a
+   -- cada elemento de la lista.
+   map' :: (a -> b) -> [a] -> [b]
+   map' _ [] = []
+   map' f (x:xs) = (f x):map' f xs     
