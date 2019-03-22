@@ -46,4 +46,10 @@ module Ejemplo where
       | n == 10 = "Octubre"
       | n == 11 = "Noviembre"
       | n == 12 = "Diciembre"
-      | otherwise = error "Número inválido"          
+      | otherwise = error "Número inválido"
+
+   -- Función que resuelve una ecuación de segundo grado     
+   ecCuad :: Float -> Float -> Float -> (Float,Float)     
+   ecCuad a b c =          
+      (((b*(-1)) + (sqrt (b**2-4*a*c)))  / (2*a),          
+       ((b*(-1)) - (sqrt (b**2-4*a*c)))  / (2*a))      
