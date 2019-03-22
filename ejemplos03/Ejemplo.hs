@@ -74,3 +74,9 @@ module Ejemplo where
    suma :: Int -> Int
    suma 0 = 0
    suma n = n + suma (n - 1)
+
+   -- Función que busca valores en un ambiente de evaluación
+   busca :: Char -> [(Char,Int)] -> Int
+   busca _ [] = error "Variable libre"
+   busca i ((sub_id,value):xs) =
+     if i == sub_id then value else busca i xs
