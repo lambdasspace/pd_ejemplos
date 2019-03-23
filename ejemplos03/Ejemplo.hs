@@ -114,3 +114,8 @@ module Ejemplo where
    foldl' :: (a -> b -> a) -> a -> [b] -> a
    foldl' _ v [] = v
    foldl' f v (x:xs) = foldl' f (f v x) xs
+
+   -- Función que calcula el área total de un cilíndro dada su altura 
+	-- y diámetro.
+	areaTotal4 :: Float -> (Float -> Float)
+	areaTotal4 h = \d -> 2 * pi * (h + r) where r = (d/2)
