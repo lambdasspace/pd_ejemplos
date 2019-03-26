@@ -18,9 +18,15 @@ type Resultado = [String]
 -- -------------------------------------------------------------------------- -- 
 -- Función que carga los datos de los pokemones desde el archivo de texto.    -- 
 -- -------------------------------------------------------------------------- -- 
-cargaBase :: IO [[String]] 
-cargaBase = do contenido <- readFile baseDatos                
-               return $ map (splitOn "|") (splitOn "\n" contenido)
+cargaBase :: IO [[String]]
+cargaBase = catchIOError try manipulador
+
+try :: IO [[String]] 
+try = do contenido <- readFile baseDatos          
+         return $ map (splitOn "|") (splitOn "\n" contenido)
+
+manipulador :: IOError -> IO [[String]] 
+manipulador ioe = return [] 
 
 -- -------------------------------------------------------------------------- -- 
 -- Aplica formato a cada pokémon.                                             -- 
