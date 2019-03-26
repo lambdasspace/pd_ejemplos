@@ -20,3 +20,4 @@ $ git clone https://github.com/declarativafc/ejemplos
 2. [Control de programas en Prolog](https://github.com/declarativafc/ejemplos/tree/master/ejemplos02)
 3. [Introducción a Haskell](https://github.com/declarativafc/ejemplos/tree/master/ejemplos03)
 4. [Tipos y clases de tipos en Haskell](https://github.com/declarativafc/ejemplos/tree/master/ejemplos04)
+5. [Programas interactivos en Haskell](https://github.com/declarativafc/ejemplos/tree/master/ejemplos05)
