@@ -11,16 +11,16 @@ El presente repositorio es una recolección de ejemplos para el laboratorio de P
 ### Descarga
 
 ```shell
-$ git clone https://github.com/declarativafc/pd_ejemplos
+$ git clone https://github.com/cursosunam/pd_ejemplos
 ```
 
 ## Contenido
 
-1. [Introducción a Prolog](https://github.com/declarativafc/pd_ejemplos/tree/master/ejemplos01)
-2. [Control de programas en Prolog](https://github.com/declarativafc/pd_ejemplos/tree/master/ejemplos02)
-3. [Introducción a Haskell](https://github.com/declarativafc/pd_ejemplos/tree/master/ejemplos03)
-4. [Tipos y clases de tipos en Haskell](https://github.com/declarativafc/pd_ejemplos/tree/master/ejemplos04)
-5. [Programas interactivos en Haskell](https://github.com/declarativafc/pd_ejemplos/tree/master/ejemplos05)
-6. [Introducción a Racket](https://github.com/declarativafc/pd_ejemplos/tree/master/ejemplos06)
-7. [Aspectos imperativos de Racket](https://github.com/declarativafc/pd_ejemplos/tree/master/ejemplos07)
-8. [Interfaces gráficas de usuario en Racket](https://github.com/declarativafc/pd_ejemplos/tree/master/ejemplos08)
+1. [Introducción a Prolog](https://github.com/cursosunam/pd_ejemplos/tree/master/ejemplos01)
+2. [Control de programas en Prolog](https://github.com/cursosunam/pd_ejemplos/tree/master/ejemplos02)
+3. [Introducción a Haskell](https://github.com/cursosunam/pd_ejemplos/tree/master/ejemplos03)
+4. [Tipos y clases de tipos en Haskell](https://github.com/cursosunam/pd_ejemplos/tree/master/ejemplos04)
+5. [Programas interactivos en Haskell](https://github.com/cursosunam/pd_ejemplos/tree/master/ejemplos05)
+6. [Introducción a Racket](https://github.com/cursosunam/pd_ejemplos/tree/master/ejemplos06)
+7. [Aspectos imperativos de Racket](https://github.com/cursosunam/pd_ejemplos/tree/master/ejemplos07)
+8. [Interfaces gráficas de usuario en Racket](https://github.com/cursosunam/pd_ejemplos/tree/master/ejemplos08)
