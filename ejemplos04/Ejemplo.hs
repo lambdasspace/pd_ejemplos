@@ -63,7 +63,7 @@ module Ejemplo where
    getLado (Cuadrado lado) = lado
 
    getRadio :: Circulo -> Float
-   getRacio (Circulo radio _) = radio
+   getRadio (Circulo radio _) = radio
 
    getCentro :: Circulo -> (Float, Float)
    getCentro (Circulo _ centro) = centro
