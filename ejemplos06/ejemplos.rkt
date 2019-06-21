@@ -1,11 +1,11 @@
 #lang racket
 
-;; Función que calcula el área de un círculo dado si diámetro.
+;; Función que calcula el área de un círculo dado su diámetro.
 ;; area: number -> number
 (define (area diametro)
     (* pi (/ diametro 2) (/ diametro 2)))
 
-;; Función que calcula el área de un círculo dado si diámetro.
+;; Función que calcula el área de un círculo dado su diámetro.
 ;; area2: number -> number
 (define (area2 diametro)
     (let ([r (/ diametro 2)])
